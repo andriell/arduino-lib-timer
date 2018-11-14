@@ -28,13 +28,15 @@ Implements a simple timer. Allows you to use the timer through the millis() func
     }
 
 
+## Types of variables
+
 Just remember that
 
-| Type 1   | Type 2              | min          | max        |
-|----------|---------------------|--------------|------------|
-| int8_t   | char                | -128         | 127        |
-| uint8_t  | byte, unsigned char | 0            | 255        |
-| int16_t  | int                 | -32768       | 32767      |
-| uint16_t | unsigned int, word  | 0            | 65535      |
-| int32_t  | long                |  -2147483648 | 2147483647 |
-| uint32_t | unsigned long       | 0            | 4294967295 |
+| Type 1   | Type 2              | MIN         | MAX        |
+|----------|---------------------|-------------|------------|
+| int8_t   | char                | -128        | 127        |
+| uint8_t  | byte, unsigned char | 0           | 255        |
+| int16_t  | int                 | -32768      | 32767      |
+| uint16_t | unsigned int, word  | 0           | 65535      |
+| int32_t  | long                | -2147483648 | 2147483647 |
+| uint32_t | unsigned long       | 0           | 4294967295 |
