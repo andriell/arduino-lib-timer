@@ -1,5 +1,5 @@
-#ifndef TimerMicros_h
-#define TimerMicros_h
+#ifndef TimerMillis_h
+#define TimerMillis_h
 
 #if defined(ARDUINO) && ARDUINO >= 100
     #include "Arduino.h"
@@ -7,11 +7,11 @@
     #include "WProgram.h"
 #endif
 
-class TimerMicros
+class TimerMillis
 {
 public:
     Timer();
-    void start(unsigned long micros);
+    void start(unsigned long millis);
     bool check();
 private:
     unsigned long start;
@@ -19,4 +19,4 @@ private:
 };
 
 
-#endif // #ifndef TimerMicros_h
+#endif // #ifndef TimerMillis_h
