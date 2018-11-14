@@ -14,7 +14,7 @@ void loop() {
     // 5 seconds have passed
     Serial.print("true ");
     // Create a new wait
-    tm.wait(5000);
+    tm.wait(5, 0);
   } else {
     Serial.print("false ");
   }

@@ -10,7 +10,10 @@
 class TimerMillis {
     public:
         TimerMillis();
-        void wait(uint32_t intervalMillis);
+        void wait(                                                                            uint32_t intervalMillis);
+        void wait(                                                  uint32_t intervalSeconds, uint32_t intervalMillis);
+        void wait(                        uint32_t intervalMinutes, uint32_t intervalSeconds, uint32_t intervalMillis);
+        void wait(uint32_t intervalHours, uint32_t intervalMinutes, uint32_t intervalSeconds, uint32_t intervalMillis);
         boolean check();
     private:
         uint32_t callMillis;
