@@ -1,1 +1,1 @@
-# arduino-lib-timer
+# Arduino lib timer
