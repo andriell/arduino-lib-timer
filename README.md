@@ -1,4 +1,4 @@
-# Arduino library Timer
+# Arduino Timer library
 
 Implements a simple timer. Allows you to use the timer through the millis() and micros() functions, given the overflow. Does not block the stream.
 
