@@ -11,7 +11,7 @@ class TimerMillis
 {
 public:
     Timer();
-    void start(uint16_t millis);
+    void start(uint16_t interval_millis);
     bool check();
 private:
     uint16_t start;
