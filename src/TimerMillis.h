@@ -7,16 +7,13 @@
     #include "WProgram.h"
 #endif
 
-class TimerMillis
-{
-public:
-    Timer();
-    void start(uint16_t interval_millis);
-    bool check();
-private:
-    uint16_t start;
-    uint16_t end;
+class TimerMillis {
+    public:
+        TimerMillis();
+        void wait(uint32_t intervalMillis);
+        boolean check();
+    private:
+        uint32_t startTime;
 };
-
 
 #endif // #ifndef TimerMillis_h
