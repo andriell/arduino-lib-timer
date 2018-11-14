@@ -2,7 +2,7 @@
 #define UL_MAX 4294967295ul
 
 TimerMillis::TimerMillis() {
-    startTime = UL_MAX;
+    startMillis = UL_MAX;
 }
 
 void TimerMillis::wait(uint32_t intervalMillis) {
