@@ -6,7 +6,7 @@ TimerMicros tm;
 void setup() {
   Serial.begin(9600);
   // The timer will return true after 5 seconds
-  tm.wait(5000);
+  tm.wait(5000000);
 }
 
 void loop() {
