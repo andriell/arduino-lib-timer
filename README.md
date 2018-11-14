@@ -1,4 +1,4 @@
-# Arduino lib timer
+# Arduino library TimerMillis
 
 Implements a simple timer. Allows you to use the timer through the millis() function, given the overflow. Does not block the stream.
 
@@ -20,12 +20,29 @@ Implements a simple timer. Allows you to use the timer through the millis() func
         // 5 seconds have passed
         Serial.print("true ");
         // Create a new wait
+        // Method wait have arguments (hours, minutes, seconds, millis)
+        // Here used seconds and millis
         tm.wait(5, 0);
       } else {
         Serial.print("false ");
       }
       Serial.println(millis());
+      delay(1000);
     }
+
+Output:
+
+    false: 10
+    false: 1010
+    false: 2020
+    ...
+    true: 5050
+    false: 6060
+    false: 7070
+    ...
+    false: 9090
+    true: 10050
+    ...
 
 
 ## Types of variables
