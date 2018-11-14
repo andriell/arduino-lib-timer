@@ -12,7 +12,7 @@ void setup() {
 void loop() {
   if (tm.check()) {
     // 5 seconds have passed
-    Serial.print("true ");
+    Serial.print("true  ");
     // Create a new wait
     // Method wait have arguments (hours, minutes, seconds, millis)
     // Here used seconds and millis

@@ -1,6 +1,6 @@
 # Arduino library Timer
 
-Implements a simple timer. Allows you to use the timer through the millis() and micros() function, given the overflow. Does not block the stream.
+Implements a simple timer. Allows you to use the timer through the millis() and micros() functions, given the overflow. Does not block the stream.
 
 ## Example
 
@@ -18,7 +18,7 @@ Implements a simple timer. Allows you to use the timer through the millis() and 
     void loop() {
       if (tm.check()) {
         // 5 seconds have passed
-        Serial.print("true ");
+        Serial.print("true  ");
         // Create a new wait
         // Method wait have arguments (hours, minutes, seconds, micros)
         // Here used seconds and micros
@@ -26,22 +26,22 @@ Implements a simple timer. Allows you to use the timer through the millis() and 
       } else {
         Serial.print("false ");
       }
-      Serial.println(millis());
+      Serial.println(micros());
       delay(1000);
     }
 
 Output:
 
-    false: 10
-    false: 1010
-    false: 2020
+    false: 10000
+    false: 1010000
+    false: 2020000
     ...
-    true: 5050
-    false: 6060
-    false: 7070
+    true:  5050000
+    false: 6060000
+    false: 7070000
     ...
-    false: 9090
-    true: 10050
+    false: 9090000
+    true: 10050000
     ...
 
 
