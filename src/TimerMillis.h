@@ -13,7 +13,8 @@ class TimerMillis {
         void wait(uint32_t intervalMillis);
         boolean check();
     private:
-        uint32_t startTime;
+        uint32_t callMillis;
+        uint32_t startMillis;
 };
 
 #endif // #ifndef TimerMillis_h
