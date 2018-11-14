@@ -11,11 +11,11 @@ class TimerMillis
 {
 public:
     Timer();
-    void start(unsigned long millis);
+    void start(uint16_t millis);
     bool check();
 private:
-    unsigned long start;
-    unsigned long end;
+    uint16_t start;
+    uint16_t end;
 };
 
 
